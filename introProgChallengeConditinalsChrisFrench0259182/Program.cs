@@ -10,126 +10,101 @@ namespace IntroProgConditionalsChrisFrench0259182
     internal class Program
     {
 
-        enum weaponType
-        {
-            Fist = 0,
-            Pistol = 1,
-            RocketLauncher = 2,
-            SniperRifle = 3,
-        }
-
-        static int weapon = weaponType;
-        static int health = 100;
-        static string healthStatus = hStats;
-        static string weaponName = weaponname;
-        static int EnemyHealth = 100;
-      //  static string EnemyHealthStatus = EhStats;
-
-       // static void dealdamage(int weapontype);
-
-        static
+        static int health = 0;
 
 
 
-            }
+
+
 
         static void Main(string[] args)
         {
-            HUD();
 
-            /*
-            dealdamage(weaponType);
+            //TakeDamage(20)
 
-            switch (EhStat)
+            // conditionals "if"
+
+            //if(health > 0) //  you are alive
+
+
+            bool isAlive = IsAlive();
+
+            if (isAlive)  // another way of doing health to call out to a method if 
             {
-                case = 0:
-                    Console.WriteLine($" Health is {EnemyHealth} Enemy is Dead. ");
-                    break;
-                case < 11 + > 0:
-            Console.WriteLine($" Health is {EnemyHealth} Enemy is in immiment danger. ");
-                    break; < 50 + > 10;
-            Console.WriteLine($" Health is {EnemyHealth} Enemy is badly hurt. ");
-                    break;
-                case  < 75 + > 49:
-            Console.WriteLine($" Health is {EnemyHealth} Enemy is in hurt. ");
-                    break;
-                case < 100 + > 74:
-            Console.WriteLine($" Health is {EnemyHealth} Enemy is healthy. ");
-                    break;
-                case == 100:
-                    Console.WriteLine($" Health is {EnemyHealth} Enemy is perfectly fit and healthy. ");
-                    break;
+
+                Console.WriteLine($"we are alive, our helth is {health} we are still alive  ");
+            }
+            else
+            {
+                Console.WriteLine($"we are no longer alive our helth is {health} ");
+
             }
 
 
 
-                    If Ehealth > 0;
 
-                    {
-                        Console.WriteLine("Enemy still alive continue combat. ");
-                    }
 
-                    Else
+
+
+        }
+
+        static bool IsAlive()
+        {
+            if (health > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+        /*   class notes for methods  
+
+
+                static int Square Number(int numToSquare)
                 {
-                        Console.WriteLine("Enemy defeated you can breath again. ");
-                    }
-            */
-
-
-            switch (hStats)
-            {
-                case = 0:
-                    Console.WriteLine($" Health is {health} You are Dead. ");
-                    break;
-                case < 11 + > 0:
-            Console.WriteLine($" Health is {health} You are in immiment danger. ");
-                    break;      
-                case< 50 + > 10:
-            Console.WriteLine($" Health is {health} EYou are badly hurt. ");
-                    break;
-                case < 75 + > 49:
-            Console.WriteLine($" Health is {health} You are in hurt. ");
-                    break;
-                case < 100 + > 74:
-            Console.WriteLine($" Health is {health} You are healthy. ");
-                    break;
-                case == 100:
-                    Console.WriteLine($" Health is {health} You are perfectly fit and healthy. ");
-                    break;
-            }
-
-
-
-        }
-        static void HUD()
-        {
-            Console.WriteLine("{0,0}{1,13}{2,9}{3,12}", "health", "weapon", "Health Status");
-            Console.WriteLine("{0,0}{1,10}{2,10}{3,10}", health, weaponName, hstat);
-
-        }
-            static void weaponname()
-        {
-            if Console.ReadLine() = (1)
-                { 
-            Console.WriteLine("Fist");
+                    return numToSquare * numToSquare;
                 }
-            else if Console.ReadLine() = (1)
+
+                static string WriteClassInfo(string nameOfClass, int numOfStudents)
                 {
-                Console.WriteLine("Pistol");
-            }
-            else if Console.ReadLine() = (2);
-                {
-                Console.WriteLine("Rocket Launcher");
+                    string result = nameOfClass;
+                    result += ": ";
+                    result =+ numOfStudents;
+                    result += "students";
 
-            }
-            else if Console.ReadLine() = (3);
-            {
-                Console.WriteLine("Sniper Rifle");
-
-            }
+                    return result;
+                }
 
 
-        }
-           
-        }
+
+                static void TakeDamage(int damageammount)
+
+                { 
+                health -= damageammount;
+                }
+
+
+
+                    static void printOneToFive()
+                    {
+
+                      //  Lines of code to wrire 1-5
+
+                    }
+
+                    */
+
+
     }
+
+
+}
