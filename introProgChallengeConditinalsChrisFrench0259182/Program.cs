@@ -21,11 +21,11 @@ namespace IntroProgConditionalsChrisFrench0259182
         static int weapon = weaponType;
         static int health = 100;
         static string healthStatus = hStats;
-        static string Weapon = weaponName;
+        static string weaponName = weaponname;
         static int EnemyHealth = 100;
-        static string EnemyHealthStatus = EhStats;
+      //  static string EnemyHealthStatus = EhStats;
 
-        static void dealdamage(int weapontype);
+       // static void dealdamage(int weapontype);
 
         static
 
@@ -37,31 +37,29 @@ namespace IntroProgConditionalsChrisFrench0259182
         {
             HUD();
 
+            /*
             dealdamage(weaponType);
 
             switch (EhStat)
             {
-                case == 0:
+                case = 0:
                     Console.WriteLine($" Health is {EnemyHealth} Enemy is Dead. ");
                     break;
-                case <= 10 + != 0:
+                case < 11 + > 0:
             Console.WriteLine($" Health is {EnemyHealth} Enemy is in immiment danger. ");
-                    break;
-                case <= 49 + > 10:
+                    break; < 50 + > 10;
             Console.WriteLine($" Health is {EnemyHealth} Enemy is badly hurt. ");
                     break;
-                case <= 74 + > 49:
+                case  < 75 + > 49:
             Console.WriteLine($" Health is {EnemyHealth} Enemy is in hurt. ");
                     break;
-                case <= 99 + > 74:
+                case < 100 + > 74:
             Console.WriteLine($" Health is {EnemyHealth} Enemy is healthy. ");
                     break;
                 case == 100:
                     Console.WriteLine($" Health is {EnemyHealth} Enemy is perfectly fit and healthy. ");
                     break;
-
-
-
+            }
 
 
 
@@ -75,14 +73,63 @@ namespace IntroProgConditionalsChrisFrench0259182
                 {
                         Console.WriteLine("Enemy defeated you can breath again. ");
                     }
+            */
 
 
-            }
-            static void HUD()
+            switch (hStats)
             {
-                Console.WriteLine("{0,0}{1,13}{2,9}{3,12}", "health", "weapon", "Health Status");
-                Console.WriteLine("{0,0}{1,10}{2,10}{3,10}", health, weaponName, hstat);
+                case = 0:
+                    Console.WriteLine($" Health is {health} You are Dead. ");
+                    break;
+                case < 11 + > 0:
+            Console.WriteLine($" Health is {health} You are in immiment danger. ");
+                    break;      
+                case< 50 + > 10:
+            Console.WriteLine($" Health is {health} EYou are badly hurt. ");
+                    break;
+                case < 75 + > 49:
+            Console.WriteLine($" Health is {health} You are in hurt. ");
+                    break;
+                case < 100 + > 74:
+            Console.WriteLine($" Health is {health} You are healthy. ");
+                    break;
+                case == 100:
+                    Console.WriteLine($" Health is {health} You are perfectly fit and healthy. ");
+                    break;
+            }
+
+
+
+        }
+        static void HUD()
+        {
+            Console.WriteLine("{0,0}{1,13}{2,9}{3,12}", "health", "weapon", "Health Status");
+            Console.WriteLine("{0,0}{1,10}{2,10}{3,10}", health, weaponName, hstat);
+
+        }
+            static void weaponname()
+        {
+            if Console.ReadLine() = (1)
+                { 
+            Console.WriteLine("Fist");
+                }
+            else if Console.ReadLine() = (1)
+                {
+                Console.WriteLine("Pistol");
+            }
+            else if Console.ReadLine() = (2);
+                {
+                Console.WriteLine("Rocket Launcher");
 
             }
+            else if Console.ReadLine() = (3);
+            {
+                Console.WriteLine("Sniper Rifle");
+
+            }
+
+
+        }
+           
         }
     }
